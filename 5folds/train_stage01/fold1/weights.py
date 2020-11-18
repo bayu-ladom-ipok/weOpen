@@ -26,31 +26,31 @@ def get_class_weights(total_counts, class_positive_counts, multiply):
     class_weights = []
     for i, class_name in enumerate(class_names):
         if(str(class_name) == 'Hernia' or str(class_name) == 'hernia'): #1
-            class_weights.append({1:0.7232649879724663,0:0.2767350120275337})
+            class_weights.append({1:0.7236677571675076,0:0.27633224283249236})
         if(str(class_name) == 'Pneumonia' or str(class_name) == 'pneumonia'): #2
-            class_weights.append({0:0.8907362103995036,1:0.10926378960049644})
+            class_weights.append({0:0.8907219629050631,1:0.10927803709493689})
         if(str(class_name) == 'Fibrosis' or str(class_name) == 'fibrosis'): #3
-            class_weights.append({0:0.8919768711724897,1:0.10802312882751028})
+            class_weights.append({0:0.8919634412359331,1:0.10803655876406691})
         if(str(class_name) == 'Edema' or str(class_name) == 'edema'): #4
-            class_weights.append({0:0.9319134537175323,1:0.06808654628246767})
+            class_weights.append({0:0.9319271929109054,1:0.06807280708909452})
         if(str(class_name) == 'Emphysema' or str(class_name) == 'emphysema'): #5
-            class_weights.append({0:0.9337746340305197,1:0.0662253659694802})
+            class_weights.append({0:0.9337897103865062,1:0.06621028961349384})
         if(str(class_name) == 'Cardiomegaly' or str(class_name) == 'cardiomegaly'): #6
-            class_weights.append({0:0.9346911422011416,1:0.06530885779885844})
+            class_weights.append({0:0.9347068811318509,1:0.06529311886814916})
         if(str(class_name) == 'Pleural_Thickening' or str(class_name) == 'pleural_thickening' or str(class_name) == 'Pleural_thickening' or str(class_name) == 'pleural_Thickening'): #7
-            class_weights.append({0:0.9471485596559489,1:0.05285144034405107})
+            class_weights.append({0:0.9471736691180249,1:0.05282633088197504})
         if(str(class_name) == 'Pneumothorax' or str(class_name) == 'pneumothorax'): #8
-            class_weights.append({0:0.9597849732593348,1:0.04021502674066528})
+            class_weights.append({0:0.9598208840445588,1:0.040179115955441255})
         if(str(class_name) == 'Consolidation' or str(class_name) == 'consolidation'): #9
-            class_weights.append({0:0.9634215851547732,1:0.03657841484522683})
+            class_weights.append({0:0.9634611131859865,1:0.036538886814013516})
         if(str(class_name) == 'Mass' or str(class_name) == 'mass'): #10
-            class_weights.append({0:0.9664815596284937,1:0.033518440371506274})
+            class_weights.append({0:0.966524458089011,1:0.03347554191098903})
         if(str(class_name) == 'Nodule' or str(class_name) == 'nodule'): #11
-            class_weights.append({0:0.9675226255494984,1:0.03247737445050164})
+            class_weights.append({0:0.9675667635564271,1:0.03243323644357292})
         if(str(class_name) == 'Atelectasis' or str(class_name) == 'atelectasis'): #12
-            class_weights.append({0:0.9767642443073444,1:0.023235755692655607})
+            class_weights.append({0:0.9768238833524878,1:0.02317611664751221})
         if(str(class_name) == 'Effusion' or str(class_name) == 'effusion'): #13
-            class_weights.append({0:0.9783086050790473,1:0.021691394920952775})
+            class_weights.append({0:0.9783726554958037,1:0.02162734450419629})
         if(str(class_name) == 'Infiltration' or str(class_name) == 'infiltration'): #4
-            class_weights.append({0:0.9807405238168388,1:0.019259476183161137})
+            class_weights.append({0:0.980815141754949,1:0.019184858245051006})
     return class_weights
